@@ -1,0 +1,27 @@
+body {
+    font-family:'Times New Roman', Times, serif; /* Sử dụng font dễ đọc */
+    font-size: 18px; /* Đặt kích thước phông 18px */
+    line-height: 1.4; /* Tăng khoảng cách giữa các dòng */
+    padding: 0 20px; /* Thêm khoảng cách giữa nội dung và mép màn hình */
+    background-color: #ffffff; /* Màu nền giảm độ tương phản */
+    color: #3d3c3c; /* Màu chữ */
+}
+a {
+    color: #083bd6; /* Màu xanh cho các lket */
+}
+h1, h2, h3 {
+    line-height: 1.2;
+    max-width: 650px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+p,b,hr{
+    max-width: 650px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+blockquote,ul {
+    max-width: 600px;
+    margin-left: auto; 
+    margin-right: auto;
+}
