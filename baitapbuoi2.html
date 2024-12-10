@@ -8,101 +8,109 @@
 </head>
 <body>
     <div class="container">
-        <div id="navbar">
-            <p><b>J</b> JASON STROFF</p>
-            <span>💬📞🎁</span>       
+        <div class="navbar">
+            <div class="navbar-logo-name">
+                <p id="logo">J<p>
+                <p id="name">JASON STROFF</p>
+            </div>
+            <div class="navbar-link">
+                <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+                <span class="material-symbols-outlined">
+                    favorite
+                </span> -->
+                <span>💬</span>
+                <span>🏠</span>
+                <span>📩</span>
+            </div>     
         </div>
 
         <div id="information">
-            <table id="basic-info">
-                <tr>
-                    <td id="left-column">
-                        <img src="https://top10tphcm.com/wp-content/uploads/2023/02/toc-nam-9.jpg" alt="Profile Picture">    
-                    </td>
-                    <td id="right-column">
-                        <p>HI THERE</p>
-                        <h2>I'm Jason Stroff, UI/UX Designer + Developer based in Florida</h2>
-                        <table id="stats-container">
-                            <tr>
-                                <th id="st-1">
-                                    <h3>6+</h3>
-                                    <p>Experience</p>
-                                </th>
-                                <th id="st-2">
-                                    <h3>89</h3>
-                                    <p>Projects</p>
-                                </th>
-                                <th id="st-3">
-                                    <h3>52</h3>
-                                    <p>Happy Clients</p>
-                                </th>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table> 
-            <div id="about-me">
+            <div class="info-header">
+                <div class="profile-img">
+                    <img src="https://top10tphcm.com/wp-content/uploads/2023/02/toc-nam-9.jpg" alt="Profile Picture">    
+                </div>
+                <div class="profile-details">
+                    <p>HI THERE</p>
+                    <h2>I'm Jason Stroff</h2>
+                    <h2>UI/UX Designer + </h2>
+                    <h2>Developer based in Florida</h2>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <h3>6+</h3>
+                            <p>Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>89</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>52</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-me">
                 <h4>ABOUT ME</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum ante a porta blandit. Quisque velit tortor, ultricies in quam ut, luctus convallis metus. Nunc vitae felis rutrum, mattis justo quis, bibendum tellus. Integer bibendum eget dolor nec venenatis. Aliquam erat volutpat. Etiam et est vitae turpis accumsan vulputate. Curabitur et vehicula nisl, eu congue dolor. Vivamus nec hendrerit mi Nulla consequat tempor.</p>
             </div>
-            <div id="download-resume-btn"> 
-                <small>DOWNLOAD RESUM</small>
+
+            <div class="download-resume-btn"> 
+                <button>DOWNLOAD RESUME</button>
             </div>
-            <div id="skills">
-                <table id="skills-info">
-                    <tr>
-                        <td id="core-skill"> 
-                            <div>
-                                <h4>CORE SKILLS</h4>
-                            </div>
-                            <p>JavaScript</p>
-                            <p>Node.js</p>
-                            <p>Express.js</p>
-                            <p>MongoDB</p>
-                            <p>Vue.js</p>
-                            <p>React</p>
-                            <p>Sequelize</p>
-                            <p>Github</p>
-                            <p>HTML</p>
-                        </td>
-                        <td id="other-skill">
-                            <div><h4>OTHER SKILLS</h4></div>
-                            <p>Storyblak</p>
-                            <p>PWAs</p>
-                            <p>Responsive web design</p>
-                            <p>React</p>
-                            <p>Vuetify</p>
-                        </td>
-                    </tr>
-                </table>   
+
+            <div class="skills">
+                <div class="skills-group">
+                    <h4>CORE SKILLS</h4>
+                    <div class="skills-list">
+                        <p>JavaScript</p>
+                        <p>Node.js</p>
+                        <p>Express.js</p>
+                        <p>MongoDB</p>
+                        <p>Vue.js</p>
+                        <p>React</p>
+                        <p>Sequelize</p>
+                        <p>Github</p>
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h4>OTHER SKILLS</h4>
+                    <div class="skills-list">
+                        <p>Storyblok</p>
+                        <p>PWAs</p>
+                        <p>Responsive web design</p>
+                        <p>Vuetify</p>
+                    </div>
+                </div>
             </div>
+
             <div id="work-experience">
-                <h4 id="w-e">WORK EXPERIENCE</h4>
-                <table id="work-infor">
-                    <tr>
-                        <td id="colum-trai">
-                            <p><b>2019-Present</b></p>
-                            <p id="nd-left">Matrix Media Inc</p>
-                            <h4>Full stack developer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            </ul>
-                        </td>
-                        <td id="colum-phai">
-                            <p><b>2018-2019</b></p>
-                            <p id="nd-right">Lexind</p>
-                            <h4>Senior app developer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                <h4>WORK EXPERIENCE</h4>
+                <div class="work-item">
+                    <div class="work-item1">
+                        <p><b>2019-Present</b></p>
+                        <p class="company-name">Matrix Media Inc</p>
+                        <h4>Full stack developer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        </ul>
+                    </div>
+                    <div class="work-item2">
+                        <p><b>2018-2019</b></p>
+                        <p class="company-name">Lexind</p>
+                        <h4>Senior app developer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>  
         </div>
     </div>

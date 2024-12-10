@@ -7,163 +7,183 @@
 body {
     background-color: #f4f4f4;
     color: #333;
-}
-h3,p{
-    text-align: left;
-}
-.container {
-    max-width: 1280px;
-    width: 100%;
-    margin-inline: 24px;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
+.container {
+    max-width: 1280px;
+    width:100%;
+    margin-inline: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+}
+
+.navbar-logo-name {
+    display:flex;
+    font-size: 24px;
+}
+#logo{
+    color:aliceblue;
+    padding:6px 10px;
+    background:#333;
+    font-size: 16px;
+}
+#name{
+    color:rgb(11, 11, 11);
+    padding:6px 10px;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.navbar span {
+    font-size: 24px;
+    color: #f4f0f0;
+    background:#e34012 ;
+    border-radius: 999px;
+}
 
 #information {
     margin-top: 40px;
-    margin-left: 260px;
-    margin-right: 220px;
-    
 }
 
-table {
+.info-header {
+    display: flex;   
+}
+
+.profile-img img {
     width: 100%;
-    height: auto;
+    max-width: 300px;
 }
 
-#left-column {
-    width: 45%;
+.profile-details {
+    padding-left: 25px;
 }
 
-#right-column {
-    width: 55%;
-    padding-left: 50px;
-}
-
-#left-column img {
-    width: 100%;
-}
-
-#right-column h2 {
+.profile-details h2 {
     font-size: 30px;
-    margin-top: 30px;
-    color: #333;
 }
 
-#right-column p {
+.profile-details p {
+    margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 16px;
     color: #555;
-
 }
 
-#about-me h4 {
-    display: inline-block;
+.stats-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.stat-item {
+    width: 30%;
+}
+
+.stat-item h3 {
+    font-size: 22px;
+    color: rgb(246, 74, 44);
+}
+
+.stat-item p {
+    color: #696969;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.about-me {
+    flex-direction: column;
     margin-top: 40px;
-    margin-bottom: 20px;
+}
+
+.about-me h4 {
+    display:inline-block;
     border-bottom: 1px solid red;
     padding-bottom: 5px;
 }
 
-#about-me p {
+.about-me p {
+    margin-top: 10px;
     line-height: 1.6;
     color: #5d5c5c;
 }
-
-#download-resume-btn small {
+.download-resume-btn{
+    display:flex;
+    flex-direction: column;
+}
+.download-resume-btn button {
     font-size: 12px;
     margin-top: 30px;
-    display: inline-block;
     padding: 10px 20px;
     color: red;
-    border-radius: 20px;
+    border-radius: 9999px;
     letter-spacing: 2px;
     border: 1px solid red;
+    align-self:center;
+
 }
-#download-resume-btn {
-    text-align: center;
+
+.skills {
+    display: flex;
+    margin-top: 40px;
 }
-#navbar b{
-    margin-left: 260px;
+.skills-group{
+    margin-right: 10px;
+}
+.skills-group h4 {
+    display:inline-block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
+}
+
+.skills-list p {
     display: inline-block;
-    color:#f4f4f4;
-    border-radius: 2px;
-    padding: 5px 10px;
-    border: 1px solid rgb(49, 48, 48);
-    background:#333;
-}
-#navbar p{
-    width:75%;
-    display:inline-block;
-}
-#navbar span{
-    font-size: 18px;
-}
-#st-1,#st-2,#st-3 h3{
-    color:rgb(246, 74, 44);
-} 
-#st-1 p,#st-2 p,#st-3 p{
-    color:#6d6d6d;
-    font-size: 14px;
-    font-weight: normal;
-    margin-top: 10px; 
-} 
-#stats-container{
-    margin-top: 40px;
-}
-#skills-info{
-    margin-top: 40px;
-}
-#core-skill{
-    width:50%;
-}
-#other-skill{
-    width: 50%;
-    padding-left: 0;
-}
-#core-skill p, #other-skill p{
-    display: inline-block; 
     margin-top: 7px;
-    border:1px solid #807e7e;
-    border-radius: 15px;
-    padding:5px 7px;
+    padding: 5px 7px;
     font-size: 14px;
+    border: 1px solid #807e7e;
+    border-radius: 9999px;
 }
-#skills-info div h4{
-    display:inline-block;
+
+#work-experience {
     margin-top: 40px;
-    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+#work-experience > h4 {
+    display:inline-block;
     border-bottom: 1px solid red;
     padding-bottom: 5px;
 }
-#work-experience #w-e {
-    display:inline-block;
-    margin-top: 40px;
-    border-bottom: 1px solid red;
-    padding-bottom: 5px;
+
+.work-item {
+    display:flex;
+    margin-top: 30px;
 }
-#nd-left,#nd-right{
+.work-item2{
+    margin-left: 10px;
+}
+.work-item p, .work-item h4 {
+    color: #484848;
+    margin-bottom: 10px;
+}
+
+.work-item ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.work-item li {
+    color: #4b4a4a;
+    margin-bottom: 10px;
+}
+
+.company-name {
     font-size: 22px;
-    color:#5d5c5c
+    color: #5d5c5c;
+    margin-bottom: 10px;
 }
-#work-infor h5,h4,p,li{
-    margin-top:15px ;  
-}
-#work-infor li{
-    margin-left: 20px;
-    color:#4b4a4a
-}
-#colum-phai {
-    padding-left: 30px;
-}
-
-
-
-
-
-    
-
-
-
-
-
-
