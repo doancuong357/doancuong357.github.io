@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #131526;
+    color: white;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #121031;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+.sidebar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+  }
+.sidebar-menu svg:hover{
+    cursor:pointer;
+}
+.sidebar-menu svg:active{
+    background:#48c2e7;
+}
+.sidebar-items{
+    display: flex;
+    gap: 8px;
+    overflow:hidden;
+    white-space: nowrap;
+}
+.sidebar-items span{
+    color: #fff;
+    font-size: 13px;
+    background:#545454;
+    padding:4px 8px;
+    border-radius: 99px;
+    cursor:pointer;
+}
+.content-items {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 30px;
+}
+
+.content-items span {
+    color: #fff;
+    font-size: 14px;
+    background:#414141;
+    padding:10px 20px;
+    border-radius: 99px;
+    cursor:pointer;
+}
+
+.content-items span:hover {
+    color: #2e8ee3;
+    background:#5e5e5e 
+}
+.search-button {
+    margin-top: 5px; 
+    display:flex;
+}
+.search-button svg{
+    cursor: pointer;
+}
+
+.search-button input {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #323232;
+    color: white;
+}
+
+.list-albums div {
+    margin-bottom: 10px;
+    background:#7e7e7e;
+    border-radius: 10px;
+    padding:4px 8px;
+}
+
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.config-avt {
+    position: absolute; 
+    right: 2%; 
+}
+.config-avt svg {
+    cursor: pointer; 
+}
+.header input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    margin-left:7px;
+    
+}
+.header span{
+    background-color: #39383e;
+    border-radius: 99px;
+    padding:10px 10px;
+    cursor:pointer;
+    
+}
+.header span:active{
+    font-size:xx-large;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #181818;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 170px;
+}
+
+.card img {
+    width: 150px;
+    height:150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.player {
+    background-color: #2b3953;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.controls {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    gap: 20px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.controls button:active {
+    font-size: medium;
+}

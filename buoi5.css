@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    height:100vh;
+}
+.sidebar{
+    background-color: aqua;
+    position:fixed;
+    width:200px;
+    height:100%;
+    left:0;
+}
+.header{
+    background-color: blue;
+    width:100%;
+    margin-left: 200px;
+    height:100px;
+    position:fixed;
+    
+    
+}
+.footer{
+    bottom:0;
+    position:fixed;
+    width:100%;
+    background-color: bisque;
+    height:200px;
+    margin-left: 200px;
+}

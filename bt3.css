@@ -1,0 +1,11 @@
+.container {
+    display:flex;
+}
+#item1{
+    background-color: red;
+    flex:0 1 auto;
+}
+#item2{
+    background-color: blue;
+    flex:0 1 auto;
+}
