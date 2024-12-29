@@ -1,0 +1,22 @@
+*{
+
+}
+.parent{
+    display: flex;
+    align-items: flex-end;
+    width: 150px;
+    height:600px;
+    background: rgb(234, 240, 233);
+    margin-inline:auto ;
+}
+.child{
+    background:red;
+    width: 100%;
+    height: 1%;
+    transition: all ease 2s;
+
+}
+.parent:hover > .child{
+    height: 100%;
+    background: green;
+}
