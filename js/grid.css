@@ -1,0 +1,42 @@
+.body{
+
+}
+.class-cha{
+    background-color: aquamarine;
+    width: 800px;
+    height:800px;
+    display:flex;
+}
+.class-c1{
+    display:flex;
+    width:200px;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.class-c11{
+    height:400px;
+    background-color:aqua;
+}
+.class-c13{
+    height:200px;
+    background-color:rgb(19, 51, 51);
+}
+.class-c2{
+    display:flex;
+    background-color: beige;
+    height:400px;
+    width:200px;
+    align-self: center;
+}
+.class-c3{
+    
+    
+}
+.class-c4{
+    background-color:rgb(229, 14, 14);
+    width:400px;
+    height:400px;
+}
+.class-c5{
+
+}

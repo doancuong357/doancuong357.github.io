@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<style>
+			header {
+				display: flex;
+				justify-content: space-between;
+			}
+			ul {
+				display: flex;
+				gap: 10px;
+			}
+			li {
+				list-style-type: none;
+				padding: 10px;
+				cursor: pointer;
+			}
+			.right {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+			button {
+				padding: 10px;
+				border-radius: 8px;
+				background: #ccc;
+			}
+
+			.fa-bars {
+				display: none;
+			}
+			.fa-xmark {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+			}
+
+			@media only screen and (min-width: 1024px) {
+				.modal {
+					display: none !important;
+				}
+			}
+			@media only screen and (max-width: 1024px) {
+				ul {
+					display: none;
+				}
+				.fa-bars {
+					display: block;
+				}
+
+				.modal {
+					position: fixed;
+					display: none;
+					flex-direction: column;
+					padding: 20px 40px;
+					background-color: #ccc;
+					inset: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="left">
+				<ul>
+					<li>Platform</li>
+					<li>Solutions</li>
+					<li>Pricing</li>
+					<li>Resources</li>
+					<li>Company</li>
+					<li>Contact us</li>
+				</ul>
+			</div>
+			<div class="right">
+				<button>Dang ky</button>
+				<button>Dang nhap</button>
+				<i class="fa-solid fa-bars" onclick="openModal()"></i>
+			</div>
+		</header>
+		<div class="modal">
+			<div>Platform</div>
+			<div>Solutions</div>
+			<div>Pricing</div>
+			<div>Resources</div>
+			<div>Company</div>
+			<div>Contact us</div>
+			<i class="fa-solid fa-xmark" onclick="closeModal()"></i>
+		</div>
+		<script>
+			const modalEle = document.querySelector(".modal");
+			function openModal() {
+				modalEle.style.display = "flex";
+			}
+			function closeModal() {
+				modalEle.style.display = "none";
+			}
+		</script>
+	</body>
+</html>
