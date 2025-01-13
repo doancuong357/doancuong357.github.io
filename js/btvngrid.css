@@ -11,8 +11,8 @@ p{
     grid-template-columns:repeat(2,50%) ;
     grid-template-rows:repeat(2,50%) ;
     background-color: rgb(177, 191, 205);
-    width: 98vw;
-    height: 98vh; 
+    width: 100vw;
+    height: 100vh; 
 }
 
     .item-1{
