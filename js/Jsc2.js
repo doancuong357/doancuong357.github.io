@@ -42,3 +42,4 @@ function reduce(arr, callback, initialValue){
 //set interval lặp,xem event loop
 // clear timeout/interval hủy
 //arr.filter
+//bất đon g bo bộ, promise, then, resolve, catch, finaly, fullfill, aysn await
