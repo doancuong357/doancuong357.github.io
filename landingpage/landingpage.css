@@ -367,6 +367,13 @@ h2 {
     font-size: 13px;
     text-align: center;
 }
+.icon3 .icon-items{
+    cursor:pointer;
+    transition: transform 0.4s ease;
+}
+.icon3 .icon-items:hover{
+    transform: scale(1.1);
+}
 .btn3-1 {
     background-color: #d6c170;
     color: #2e2e2e;
