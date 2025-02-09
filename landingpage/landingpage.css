@@ -21,6 +21,9 @@ ul {
 }
 
 header {
+    position: fixed;
+    width:100%;
+    z-index: 1000;
     letter-spacing: 1.5px;
     background: #0a0a0a;
     display: flex;
