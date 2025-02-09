@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
@@ -258,15 +257,15 @@ h2 {
 
 .cards {
     display: flex;
-    justify-content: space-between; /* Trải đều card */
-    gap: 20px; /* Khoảng cách giữa các card */
-    flex-wrap: wrap; /* Xuống dòng khi màn hình nhỏ */
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 .card { 
     overflow: hidden;
     flex: 1;
-    max-width: 470px; /* Giữ kích thước hợp lý */
+    max-width: 470px; 
     transition: transform 0.3s ease-in-out;
 }
 
@@ -297,13 +296,13 @@ h2 {
 
 /**/
 .content-3 {
-    background-color: white; /* Nền trắng */
+    background-color: white; 
     padding: 60px 20px;
 }
 
 .container-center-3 {
     display: flex;
-    flex-direction: row; /* Các phần tử sắp xếp theo hàng ngang */
+    flex-direction: row; 
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -436,35 +435,35 @@ h2 {
     color: #666;
 }
 
-/* Responsive cho màn hình nhỏ */
+
 @media (max-width: 768px) {
     .container-center-3 {
-        flex-direction: column; /* Các phần tử sẽ xếp theo chiều dọc */
+        flex-direction: column; 
         text-align: center;
     }
 
     .text-content-3, .champion-image-container {
         width: 100%;
-        margin-bottom: 20px; /* Tạo khoảng cách khi xếp thành cột */
+        margin-bottom: 20px; 
     }
 }
 /**/
-/* Định dạng phần chứa */
+
 .container-4 {
     display: flex;
-    flex-direction: row; /* Xếp ngang: Ảnh bên trái, nội dung bên phải */
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-image: url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/a6f94cd5ed222d3b99e535f17cd9592d3c716bb5-3840x1616.png?auto=format&amp;fit=fill&amp;q=80&amp;h=1020");
     padding: 50px;
 }
 
-/* Ảnh bên trái */
+
 .featured-champion-img {
     width: 100%;
     height:100%; 
-    max-width: 700px; /* Giới hạn kích thước */
-    border-radius: 10px; /* Bo góc */
+    max-width: 700px; 
+    border-radius: 10px; 
 }
 
 .title-text-4 {
@@ -506,16 +505,16 @@ h2 {
     background-color: #c1b082;
 }
 
-/* Responsive cho màn hình nhỏ */
+
 @media (max-width: 768px) {
     .container-4 {
-        flex-direction: column; /* Xếp dọc khi màn hình nhỏ */
+        flex-direction: column; 
         text-align: center;
     }
 
     .featured-champion-img,
     .text-content-4 {
-        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        width: 100%; 
         padding-left: 0;
     }
 }
@@ -603,8 +602,8 @@ h2 {
     margin-top: 5px;
     text-transform: uppercase;
     text-align: center;
-    max-width: 90px; /* Giới hạn chiều rộng của nội dung */
-    white-space: normal; /* Cho phép xuống hàng */
+    max-width: 90px; 
+    white-space: normal;
     word-wrap: break-word;
     overflow:hidden; 
 }
@@ -621,9 +620,9 @@ h2 {
 .right-content h2{
     margin-top: 40px;
     color:white;
-    font-size: 22px; /* Điều chỉnh kích thước tiêu đề */
-    font-weight: bold; /* Làm đậm tiêu đề */
-    font-style: italic; /* In nghiêng tiêu đề */
+    font-size: 22px; 
+    font-weight: bold; 
+    font-style: italic; 
 }
 .right-content video {
     width: 100%;
@@ -719,7 +718,6 @@ h2 {
   }
   
   .legal-section {
-    border-top: 1px solid #333;
     padding-top: 30px;
     text-align: center;
   }
@@ -763,5 +761,17 @@ h2 {
     padding:8px 10px;
     border-radius: 5px;
   }
+  .logo-riot{
+    display:flex;
+    justify-content:center ;
+    margin-top: 30px;
+  }
+  .logo-riot svg{
+    fill:#4f4f4f;
+  }
+  .logo-riot svg:hover{
+    fill:#fcfcfc;
+  }
+
   
 
