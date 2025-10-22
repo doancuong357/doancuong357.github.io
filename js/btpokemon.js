@@ -27,12 +27,26 @@ function getIDPokemon(url) {
 
 async function render() {
     const itemPokemon = document.querySelector('.items');
-    for (let index = offset; index < offset + numberOfRender && index < filtered_pkm.length; index++) {
-        const pokemon = filtered_pkm[index];
-        const ID = getIDPokemon(pokemon.url);
+    // 1. Lấy danh sách các Pokémon cần render
+    const pkmToRender = filtered_pkm.slice(offset, offset + numberOfRender);
 
-        const typeData = await fetchAPI(pokemon.url);
-        htmlType = "";
+    // 2. Tạo một mảng các Promises
+    // Mỗi Promise là một lệnh gọi fetchAPI để lấy dữ liệu chi tiết của từng Pokémon
+    const fetchPromises = pkmToRender.map(pokemon => {
+        return fetchAPI(pokemon.url);
+    });
+
+    // 3. Sử dụng Promise.all() để đợi tất cả các lệnh gọi API hoàn thành song song
+    const typeDataArray = await Promise.all(fetchPromises);
+
+    htmlPokemon = ""; // Đảm bảo làm sạch htmlPokemon trước khi render mới
+
+    // 4. Lặp qua kết quả đã tải về để tạo HTML
+    pkmToRender.forEach((pokemon, index) => {
+        const ID = getIDPokemon(pokemon.url);
+        const typeData = typeDataArray[index]; // Lấy dữ liệu chi tiết tương ứng
+
+        let htmlType = "";
         typeData.types.forEach(element => {
             htmlType += `
                 <div class="types__item ${element.type.name}">${element.type.name}</div>
@@ -49,9 +63,9 @@ async function render() {
                 <div class="types">${htmlType}</div>
             </div>
         `;
-    }
+    });
 
-    itemPokemon.innerHTML = htmlPokemon;
+    itemPokemon.innerHTML += htmlPokemon; // Thay thế hoặc thêm vào innerHTML
     setupLoadMore();
 }
 
