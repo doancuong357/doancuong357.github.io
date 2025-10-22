@@ -2,7 +2,7 @@ let all_pkm = [];
 let filtered_pkm = [];
 
 let offset = 0;
-let numberOfRender = 36;
+let numberOfRender = 30;
 
 let htmlPokemon = "";
 let htmlType = "";
